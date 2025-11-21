@@ -1,0 +1,46 @@
+@font-face {
+  font-family: Peachy Keen;
+  src: url("../src/assets/fonts/peachy-keen-jf.otf");
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url("../src/assets/fonts/Ubuntu-Regular.ttf");
+}
+
+@font-face {
+  font-family: Ubuntu-Bold;
+  src: url("../src/assets/fonts/Ubuntu-Bold.ttf");
+}
+
+@font-face {
+  font-family: Ubuntu-Italic;
+  src: url("../src/assets/fonts/Ubuntu-Italic.ttf");
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url("../src/assets/fonts/Raleway-VariableFont_wght.ttf");
+}
+
+@import 'tailwindcss';
+
+
+@theme {
+  --font-peachy-keen: 'Peachy Keen', 'cursive';
+  --font-ubuntu: 'Ubuntu', 'sans-serif';
+  --font-ubuntu-bold: 'Ubuntu-Bold', 'sans-serif';
+  --font-ubuntu-italic: 'Ubuntu-Italic', 'sans-serif';
+  --font-raleway: 'Raleway', 'sans-serif';
+  --color-marron-hero: #6a2e0d;
+}
+
+@layer components{
+  .btn-primary {
+    @apply text-xl border-2 border-amber-800 hover:opacity-70 hover:cursor-pointer hover:transition-all rounded-2xl bg-linear-to-r from-amber-200 to-amber-800 px-5 py-2 shadow
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
