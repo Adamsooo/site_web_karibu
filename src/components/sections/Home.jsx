@@ -9,7 +9,7 @@ export const Home = () => {
                                gap-5
                                scroll-mt-24">
         <div className="flex flex-row items-center">
-          <TitreHero titre="Bienvenue chez" />
+          <TitreHero titre="Bienvenu chez" />
           <div>
             <img src="LogoKaribuOriginal.png" alt="Logo Karibu Original" className="ml-2 mt-8 w-80 h-80" />
           </div>
