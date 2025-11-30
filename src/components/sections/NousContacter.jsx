@@ -12,36 +12,36 @@ export const NousContacter = () => {
                             gap-10">
             <TitrePrincipal titre="Vous avez des questions ?" variant="clair" />
 
-            <div className="flex flex-row gap-8 text-3xl text-amber-200">
+            <div className="md:flex md:flex-row grid grid-cols-3 gap-8 text-3xl text-amber-200">
                 <a 
                    href="https://www.instagram.com/karibu_uge/" 
                    target="_blank" 
                    rel="noopener noreferrer">
-                    <FaInstagram className="hover:text-amber-400 transition-colors duration-300 h-20 w-20" />
+                    <FaInstagram className="hover:text-amber-400 hover:scale-115 hover:shadow-2xl transition-colors duration-500 md:h-20 md:w-20 h-15 w-15" />
                 </a>
                 <a 
                    href="https://fr.linkedin.com/company/karibu-uge" 
                    target="_blank" 
                    rel="noopener noreferrer">
-                    <FaLinkedin className="hover:text-amber-400 transition-colors duration-300 h-20 w-20" />
+                    <FaLinkedin className="hover:text-amber-400 hover:scale-115 hover:shadow-2xl transition-colors duration-500 md:h-20 md:w-20 h-15 w-15" />
                 </a>
                 <a 
                    href="https://wa.me/33768289412?text=Bonjour%2C%20j%27ai%20vu%20l%27association%20Karibu%20sur%20insta%2C%20qu%27est-ce%20que%20vous%20faites%20concr%C3%A8tement%20et%20comment%20l%27int%C3%A9gre-t-on%20%3F" 
                    target="_blank" 
                    rel="noopener noreferrer">
-                    <FaWhatsapp className="hover:text-amber-400 transition-colors duration-300 h-20 w-20" />
+                    <FaWhatsapp className="hover:text-amber-400 hover:scale-115 hover:shadow-2xl transition-colors duration-500 md:h-20 md:w-20 h-15 w-15" />
                 </a>
                 <a 
                    href="mailto:info@assokaribu.com" 
                    target="_blank" 
                    rel="noopener noreferrer">
-                    <MdEmail className="hover:text-amber-400 transition-colors duration-300 h-20 w-20" />
+                    <MdEmail className="hover:text-amber-400 hover:scale-115 hover:shadow-2xl transition-colors duration-500 md:h-20 md:w-20 h-15 w-15" />
                 </a>
                 <a 
                    href="https://linktr.ee/karibu_uge" 
                    target="_blank" 
                    rel="noopener noreferrer">
-                    <SiLinktree className="hover:text-amber-400 transition-colors duration-300 h-20 w-20" />
+                    <SiLinktree className="hover:text-amber-400 hover:scale-115 hover:shadow-2xl transition-colors duration-500 h-15 w-15" />
                 </a>
             </div>
 

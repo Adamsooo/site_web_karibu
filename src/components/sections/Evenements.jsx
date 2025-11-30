@@ -5,7 +5,7 @@ export const Evenements = () => {
     return ( 
     <section className="flex flex-col gap-10 p-10 bg-linear-to-l from-amber-700 to-amber-950">
         <TitrePrincipal titre="Nos événements à venir..." variant="clair" />
-        <div className="flex flex-row justify-center w-full pl-10 gap-6">
+        <div className="overflow-x-auto whitespace-nowrap flex flex-row justify-start w-full px-5 py-5 gap-6">
             <CarteClaire
                 image="https://ssl.images-ssl-mars.com/50018/2025/09/28/1/e/1eecbe7353fd3180.jpg"
                 title="Hello"

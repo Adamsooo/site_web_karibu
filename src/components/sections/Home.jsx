@@ -4,14 +4,20 @@ import { TitreHero } from "../TitreHero.jsx";
 
 export const Home = () => {
     return <section id="home" 
-                    className="flex flex-col pt-12 justify-center items-center 
+                    className="flex flex-col pt-20 justify-center items-center 
                                text-center bg-linear-to-r from-amber-100 to-amber-500 bg-amber-50 
                                gap-5
-                               scroll-mt-24">
-        <div className="flex flex-row items-center">
-          <TitreHero titre="Bienvenue chez" />
+                               scroll-mt-24
+                               md:pt-24">
+        <div className="flex md:flex-row flex-col items-center">
           <div>
-            <img src="LogoKaribuOriginal.png" alt="Logo Karibu Original" className="ml-2 mt-8 w-80 h-80" />
+            <TitreHero titre="Bienvenue chez"/>
+          </div>
+          <div>
+            <img src="LogoKaribuOriginal.png" 
+                 alt="Logo Karibu Original" 
+                 className="ml-2 w-50 h-50
+                            md:w-80 md:h-80 md:mt-8" />
           </div>
         </div>
         <h2 className="font-ubuntu text-4xl">L'asso <span className="font-ubuntu-italic">afro</span> de l’Université Gustave Eiffel.</h2>

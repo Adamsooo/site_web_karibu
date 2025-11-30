@@ -5,7 +5,7 @@ export const TitrePrincipal = ({ titre, variant = "sombre" }) => {
         : "text-amber-950";         // clair
 
     return (
-        <h1 className={`text-6xl font-peachy-keen ${variantClasses}`}>
+        <h1 className={`text-6xl md:text-7xl font-peachy-keen ${variantClasses}`}>
             {titre}
         </h1>
     );
