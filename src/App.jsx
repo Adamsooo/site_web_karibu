@@ -19,7 +19,7 @@ function App() {
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <MenuMobile menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <Home />
-      <Taille/>
+      {/*<Taille/>*/}
       <Evenements />
       <Equipe/>
       <NousContacter/>
