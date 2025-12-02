@@ -3,7 +3,9 @@ import { TitrePrincipal } from "../TitrePrincipal.jsx";
 
 export const Evenements = () => {
     return ( 
-    <section className="flex flex-col gap-10 p-10 bg-linear-to-l from-amber-700 to-amber-950">
+    <section className="flex flex-col gap-10 p-5 
+                        bg-linear-to-l from-amber-700 to-amber-950
+                        md:p-10">
         <TitrePrincipal titre="Nos événements à venir..." variant="clair" />
         <div className="overflow-x-auto whitespace-nowrap flex flex-row justify-start w-full px-5 py-5 gap-6">
             <CarteClaire

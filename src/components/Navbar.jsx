@@ -13,7 +13,7 @@ export const Navbar = ({menuOpen,setMenuOpen}) => {
               <img src="LogoKaribu.png" alt="Logo Karibu" className="w-16 h-16" />
             </a>
           </div>
-          <div className="text-xl font-black cursor-pointer md:hidden"
+          <div className="text-2xl font-black cursor-pointer md:hidden"
                onClick={() => setMenuOpen((prev) => !prev)}>
             &#9776;
           </div>

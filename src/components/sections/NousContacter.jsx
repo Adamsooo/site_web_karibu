@@ -7,9 +7,10 @@ import { SiLinktree } from "react-icons/si";
 export const NousContacter = () => {
     return (
         <section id='nouscontacter' 
-                 className="scroll-mt-24 flex flex-col items-center p-10 
+                 className="flex flex-col items-center p-5 md:p-10 
                             bg-linear-to-l from-amber-700 to-amber-950
-                            gap-10">
+                            gap-10
+                            scroll-mt-20 md:scroll-mt-24">
             <TitrePrincipal titre="Vous avez des questions ?" variant="clair" />
 
             <div className="md:flex md:flex-row grid grid-cols-3 gap-8 text-3xl text-amber-200">

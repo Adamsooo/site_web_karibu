@@ -9,14 +9,14 @@ export const Footer = () => {
                 </div>
                 {/* Trait blanc entre les deux sections */}
                 <div className="h-12 border-l border-amber-100 mx-4"></div>
-                <nav className="grid gap-1 text-xl pl-4">
+                <nav className="grid gap-1 text-md md:text-xl pl-4">
                     <a href="#home" className="font-ubuntu hover:transition-all hover:scale-105">Accueil</a>
                     <a href="#equipe" className="font-ubuntu hover:transition-all hover:scale-105">Présentation</a>
                     <a href="#nouscontacter" className="font-ubuntu hover:transition-all hover:scale-105">Nous contacter</a>
                 </nav>
             </div>
             <div className="border-t border-amber-100 my-4"></div>
-            <p className="text-center text-white mt-4">© {new Date().getFullYear()} Copyright Karibu UGE</p>
+            <p className="text-center text-sm md:text-xl text-white mt-4">© {new Date().getFullYear()} Copyright Karibu UGE, tous droits réservés.</p>
         </footer>
     )
 }

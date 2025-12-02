@@ -4,9 +4,10 @@ import CarteClaire from "../CarteClaire.jsx";
 export const Equipe = () => {
     return (
         <section id="equipe"
-                 className="flex flex-col gap-10 p-10 
+                 className="flex flex-col gap-10 p-5 
                             bg-linear-to-r from-amber-100 to-amber-500
-                            scroll-mt-24"  
+                            scroll-mt-20
+                            md:p-10 md:scroll-mt-24"  
         >    
                 <div className="flex justify-start ">
                     <TitrePrincipal titre="Notre Equipe" />
