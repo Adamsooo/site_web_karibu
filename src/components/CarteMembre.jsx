@@ -19,7 +19,7 @@
         ">
             
         {/* Image */}
-        <div className="w-full aspect-[4/5] overflow-hidden rounded-md">
+        <div className="w-full aspect-4/5 overflow-hidden rounded-md">
             <img 
             src={image} 
             alt={title}
