@@ -1,5 +1,4 @@
 import { BoutonPrimaire } from "../BoutonPrimaire.jsx";
-import { BoutonSecondaire } from "../BoutonSecondaire.jsx";
 import { TitreHero } from "../TitreHero.jsx";
 
 export const Home = () => {
@@ -22,12 +21,13 @@ export const Home = () => {
         </div>
         <h2 className="font-ubuntu text-3xl md:text-4xl">L'asso <span className="font-ubuntu-italic">afro</span> de l’Université Gustave Eiffel.</h2>
         <p className="font-raleway text-xl md:text-2xl md:max-w-xl text-center">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. In omnis dicta quia iure eos optio libero dignissimos ipsa delectus tempora numquam aspernatur alias corrupti beatae, dolores ex consequuntur nisi itaque.
+         Nous accueillons et accompagnons les étudiants africains (mais pas que) dans leurs démarches, leur intégration et leur réussite à l'Univ !
+         On fait vivre les cultures africaines sur le campus à travers des événements forts : soirées, conférences, rencontres, défilés, tournois, et bien plus encore.
         </p>
         <div className="flex items-center mb-5">
           <a href="https://www.helloasso.com/associations/karibu-uge/adhesions/formulaire-adhesion">
             <BoutonPrimaire>
-              Nous rejoindre                              
+              Rejoignez-nous !                              
             </BoutonPrimaire>
           </a>
         </div>

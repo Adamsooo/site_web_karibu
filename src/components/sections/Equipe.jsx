@@ -20,15 +20,48 @@ export const Equipe = () => {
                         buttonText="En savoir plus"
                         onButtonClick={() => alert("Tu as cliqué !")}
                     />*/}
-                    <CarteClaire
-                                    image="https://ssl.images-ssl-mars.com/50018/2025/09/28/1/e/1eecbe7353fd3180.jpg"
-                                    title="Hello"
+                    <CarteMembre
+                                    image="/Membres/Malick.PNG"
+                                    title="Malick"
                                     description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos in, architecto ut asperiores totam ipsum?"
                                     buttonText="En savoir plus"
                                     link="https://www.linkedin.com/in/alla-michael-assande-617b9423b/"
                     />
-                    
-
+                    <CarteMembre
+                                    image="/Membres/Makinie.PNG"
+                                    title="Makinie"
+                                    description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos in, architecto ut asperiores totam ipsum?"
+                                    buttonText="En savoir plus"
+                                    link="https://www.linkedin.com/in/alla-michael-assande-617b9423b/"
+                    />
+                    <CarteMembre
+                                    image="/Membres/Aïssatou.PNG"
+                                    title="Aïssatou"
+                                    description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos in, architecto ut asperiores totam ipsum?"
+                                    buttonText="En savoir plus"
+                                    link="https://www.linkedin.com/in/alla-michael-assande-617b9423b/"
+                    />
+                    <CarteMembre
+                                    image="/Membres/Méryle.PNG"
+                                    title="Méryle"
+                                    description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos in, architecto ut asperiores totam ipsum?"
+                                    buttonText="En savoir plus"
+                                    link="https://www.linkedin.com/in/alla-michael-assande-617b9423b/"
+                    />
+                    <CarteMembre
+                                    image="/Membres/Elmer.PNG"
+                                    title="Elmer"
+                                    description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos in, architecto ut asperiores totam ipsum?"
+                                    buttonText="En savoir plus"
+                                    link="https://www.linkedin.com/in/alla-michael-assande-617b9423b/"
+                    />
+                    <CarteMembre
+                                    image="/Membres/Adams.PNG"
+                                    title="Adams"
+                                    description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos in, architecto ut asperiores totam ipsum?"
+                                    buttonText="En savoir plus"
+                                    link="https://www.linkedin.com/in/alla-michael-assande-617b9423b/"
+                    />
                 </div>
         </section>
     )

@@ -6,35 +6,21 @@ export const Evenements = () => {
     <section className="flex flex-col gap-10 p-5 
                         bg-linear-to-l from-amber-700 to-amber-950
                         md:p-10">
-        <TitrePrincipal titre="Nos événements à venir..." variant="clair" />
+        <TitrePrincipal titre="Nos événements..." variant="clair" />
         <div className="overflow-x-auto whitespace-nowrap flex flex-row justify-start w-full px-5 py-5 gap-6">
             <CarteClaire
-                image="https://ssl.images-ssl-mars.com/50018/2025/09/28/1/e/1eecbe7353fd3180.jpg"
-                title="Hello"
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos in, architecto ut asperiores totam ipsum?"
+                image="/Events/BBQ Affiches officielles (Votre story) (1).png"
+                title="BBQ de Karibu"
+                description="Notre événement de clôture du dernier mandat a été un franc succès ! Un grand merci à tous les participants qui ont rendu cette journée mémorable. Entre les délicieuses grillades, les jeux amusants et les moments de partage, nous avons créé des souvenirs inoubliables ensemble. Restez connectés pour nos prochains événements !"
                 buttonText="En savoir plus"
-                link="https://www.linkedin.com/in/alla-michael-assande-617b9423b/"
+                link="https://www.instagram.com/p/DMSVIEwst7K/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
             />
             <CarteClaire
-                image="https://ssl.images-ssl-mars.com/50018/2025/09/28/1/e/1eecbe7353fd3180.jpg"
-                title="Hello"
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos in, architecto ut asperiores totam ipsum?"
+                image="/Events/Conference.png"
+                title="Conférence JEE"
+                description="Notre première conférence organisée à ESIEE Paris"
                 buttonText="En savoir plus"
-                onButtonClick={() => alert("Tu as cliqué !")}
-            />
-            <CarteClaire
-                image="https://ssl.images-ssl-mars.com/50018/2025/09/28/1/e/1eecbe7353fd3180.jpg"
-                title="Hello"
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos in, architecto ut asperiores totam ipsum?"
-                buttonText="En savoir plus"
-                onButtonClick={() => alert("Tu as cliqué !")}
-            />
-            <CarteClaire
-                image="https://ssl.images-ssl-mars.com/50018/2025/09/28/1/e/1eecbe7353fd3180.jpg"
-                title="Hello"
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos in, architecto ut asperiores totam ipsum?"
-                buttonText="En savoir plus"
-                onButtonClick={() => alert("Tu as cliqué !")}
+                link="https://www.instagram.com/karibu_uge/p/DJvmw-eMSU6/"
             />
         </div>
     </section>
