@@ -19,10 +19,10 @@ export const Home = () => {
                             md:w-80 md:h-80 md:mt-8" />
           </div>
         </div>
-        <h2 className="font-ubuntu text-3xl md:text-4xl">L'asso <span className="font-ubuntu-italic">afro</span> de l’Université Gustave Eiffel.</h2>
+        <h2 className="font-ubuntu text-3xl md:text-4xl">La 1ère asso <span className="font-ubuntu-italic">afro</span> de l’Université Gustave Eiffel.</h2>
         <p className="font-raleway text-xl md:text-2xl md:max-w-xl text-center">
-         Nous accueillons et accompagnons les étudiants africains (mais pas que) dans leurs démarches, leur intégration et leur réussite à l'Univ !
-         On fait vivre les cultures africaines sur le campus à travers des événements forts : soirées, conférences, rencontres, défilés, tournois, et bien plus encore.
+         Nous accueillons les étudiants africains (mais pas que) dans leurs démarches, leur intégration et leur réussite à l'Univ !<br/>
+         Soirées, rencontres, défilés, tournois... On fait vivre les cultures africaines sur le campus à travers des événements forts !
         </p>
         <div className="flex items-center mb-5">
           <a href="https://www.helloasso.com/associations/karibu-uge/adhesions/formulaire-adhesion">
