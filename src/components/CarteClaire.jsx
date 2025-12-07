@@ -17,6 +17,7 @@ export const CarteClaire = ({image,
       transition-all duration-300
       hover:scale-105 hover:shadow-2xl
       max-h-2xs min-h-xs
+      overflow-hidden
     ">
 
       {/* Image */}
@@ -30,14 +31,16 @@ export const CarteClaire = ({image,
       </div>
 
       {/* Titre */}
-      <h1 className="text-2xl text-center font-ubuntu-bold text-amber-200">
+      <h1 className="text-2xl text-center font-ubuntu-bold text-amber-200 truncate">
         {title}
       </h1>
 
       {/* Description limitée */}
-      <p className="text-sm text-amber-100 font-raleway line-clamp-5">
-        {description}
-      </p>
+      <div>
+        <p className="text-sm text-center text-amber-100 font-raleway line-clamp-5">
+          {description}
+        </p>
+      </div>
 
       {/* Bouton redirection */}
       <div className="flex justify-center mt-4">

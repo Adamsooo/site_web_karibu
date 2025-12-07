@@ -65,6 +65,20 @@ export const MenuMobile = ({menuOpen,setMenuOpen}) => {
                                 `}>
                     Nous contacter
                 </a>
+                <a href="https://www.helloasso.com/associations/karibu-uge/adhesions%20%20/formulaire-adhesion"
+                   onClick={()=>setMenuOpen(false)} 
+                   className={`flex flex-col items-center 
+                               h-full justify-center
+                               hover:underline-offset-1 hover:underline hover:scale-110 
+                               hover:transition-all hover:duration-500
+                                ${
+                                    menuOpen
+                                    ? 'opacity-100 translate-y-0'
+                                    : 'opacity-0 translate-y-5'
+                                }
+                                `}>
+                    Adhérer
+                </a>
             </nav>
         </div>
     )

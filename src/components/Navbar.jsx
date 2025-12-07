@@ -20,10 +20,11 @@ export const Navbar = ({menuOpen,setMenuOpen}) => {
         </div>
         <div className="hidden md:flex justify-between mx-40 px-4">
           <img src="LogoKaribu.png" alt="Logo Karibu" className="w-24 h-24 max-xs:w-10 max-xs:h-10" />
-          <div className="flex justify-evenly items-center text-xl ml-auto gap-6">
+          <div className="flex justify-evenly items-center text-xl ml-auto gap-8">
             <a href="#home" className="font-ubuntu hover:transition-all hover:scale-105">Accueil</a>
             <a href="#equipe" className="font-ubuntu hover:transition-all hover:scale-105">Notre équipe</a>
             <a href="#nouscontacter" className="font-ubuntu hover:transition-all hover:scale-105">Nous contacter</a>
+            <a href="https://www.helloasso.com/associations/karibu-uge/adhesions  /formulaire-adhesion" className="font-ubuntu hover:transition-all hover:scale-105">Adhérer</a>
           </div>
         </div>
     </nav>);

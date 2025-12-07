@@ -3,13 +3,13 @@ import { TitrePrincipal } from "../TitrePrincipal.jsx";
 
 export const Evenements = () => {
     return ( 
-    <section className="flex flex-col gap-10 p-5 
+    <section className="flex flex-col gap-5 p-5 
                         bg-linear-to-l from-amber-700 to-amber-950
                         md:p-10">
         <TitrePrincipal titre="Nos événements..." variant="clair" />
-        <div className="overflow-x-auto whitespace-nowrap flex flex-row justify-start w-full px-5 py-5 gap-6">
+        <div className="overflow-x-auto whitespace-nowrap flex flex-row justify-start w-full px-5 pt-5 pb-10 gap-6">
             <CarteClaire
-                image="/Events/BBQ Affiches officielles (Votre story) (1).png"
+                image="/Events/BBQ.png"
                 title="BBQ de Karibu"
                 description="Notre événement de clôture du dernier mandat a été un franc succès ! Un grand merci à tous les participants qui ont rendu cette journée mémorable. Entre les délicieuses grillades, les jeux amusants et les moments de partage, nous avons créé des souvenirs inoubliables ensemble. Restez connectés pour nos prochains événements !"
                 buttonText="En savoir plus"
@@ -21,6 +21,20 @@ export const Evenements = () => {
                 description="Notre première conférence organisée à ESIEE Paris"
                 buttonText="En savoir plus"
                 link="https://www.instagram.com/karibu_uge/p/DJvmw-eMSU6/"
+            />
+            <CarteClaire
+                image="/Events/SalonMondeArabe.JPG"
+                title="Salon du monde Arabe"
+                description="Nous étions au salon du monde Arabe à Montrouge pour représenter les cultures africaines et échanger avec d'autres associations culturelles."
+                buttonText="En savoir plus"
+                link="https://www.instagram.com/karibu_uge/p/DJvmw-eMSU6/"
+            />
+            <CarteClaire
+                image="/Events/Story avec l'Épicerie Solidaire.png"
+                title="Collecte w/ l'Épicerie Solidaire"
+                description="C'est un rituiel pour nous de participer aux collectes de l'Épicerie Solidaire de l'Université Gustave Eiffel. Merci à tous ceux qui ont contribué à cette belle initiative de solidarité étudiante !"
+                buttonText="En savoir plus"
+                link="https://fr.linkedin.com/posts/karibu-uge_solidarit%C3%A9%C3%A9tudiante-engagementassociatif-activity-7291820045951746049-iFMK?utm_source=li_share&utm_content=feedcontent&utm_medium=g_dt_web&utm_campaign=copy"
             />
         </div>
     </section>
