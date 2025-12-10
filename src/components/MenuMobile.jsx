@@ -65,7 +65,7 @@ export const MenuMobile = ({menuOpen,setMenuOpen}) => {
                                 `}>
                     Nous contacter
                 </a>
-                <a href="https://www.helloasso.com/associations/karibu-uge/adhesions%20%20/formulaire-adhesion"
+                <a href="https://www.helloasso.com/associations/karibu-uge/adhesions/formulaire-adhesion"
                    onClick={()=>setMenuOpen(false)} 
                    className={`flex flex-col items-center 
                                h-full justify-center
