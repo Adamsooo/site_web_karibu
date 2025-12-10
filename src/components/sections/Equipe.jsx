@@ -42,6 +42,13 @@ export const Equipe = () => {
                                     link="https://www.linkedin.com/in/alla-michael-assande-617b9423b/"
                     />
                     <CarteMembre
+                                    image="/Membres/Marjory.PNG"
+                                    title="Marjory"
+                                    description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos in, architecto ut asperiores totam ipsum?"
+                                    buttonText="En savoir plus"
+                                    link="https://www.linkedin.com/in/alla-michael-assande-617b9423b/"
+                    />
+                    <CarteMembre
                                     image="/Membres/Méryle.PNG"
                                     title="Méryle"
                                     description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos in, architecto ut asperiores totam ipsum?"
