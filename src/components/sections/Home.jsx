@@ -25,7 +25,7 @@ export const Home = () => {
          Soirées, rencontres, défilés, tournois... On fait vivre les cultures africaines sur le campus à travers des événements forts !
         </p>
         <div className="flex items-center mb-5">
-          <a href="https://www.helloasso.com/associations/karibu-uge/adhesions  /formulaire-adhesion">
+          <a href="https://www.helloasso.com/associations/karibu-uge/adhesions/formulaire-adhesion">
             <BoutonPrimaire>
               Rejoignez-nous !                              
             </BoutonPrimaire>
