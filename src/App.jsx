@@ -6,6 +6,7 @@ import { Footer } from './components/Footer'
 import { Evenements } from './components/sections/Evenements'
 import { Equipe } from './components/sections/Equipe'
 import { NousContacter } from './components/sections/NousContacter'
+import { Analytics } from "@vercel/analytics/react"
 import { Taille } from './components/sections/Taille'
 import './index.css'
 

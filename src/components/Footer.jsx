@@ -4,7 +4,7 @@ export const Footer = () => {
             <div className="flex items-center justify-center ">
                 <div className="flex items-center ">
                     <a href="#home">
-                        <img src="/LogoKaribu.png" alt="Logo Karibu" className="w-20 h-20 inline-block mr-2" />
+                        <img src="/LogoKaribuNoel.png" alt="Logo Karibu" className="w-20 h-20 inline-block mr-2" />
                     </a>
                 </div>
                 {/* Trait blanc entre les deux sections */}

@@ -10,7 +10,7 @@ export const Navbar = ({menuOpen,setMenuOpen}) => {
         <div className="md:hidden flex justify-between items-center mx-10 px-4 py-2">
           <div>
             <a href="#home">
-              <img src="LogoKaribu.png" alt="Logo Karibu" className="w-16 h-16" />
+              <img src="/LogoKaribuNoel.png" alt="Logo Karibu" className="w-16 h-16" />
             </a>
           </div>
           <div className="text-2xl font-black cursor-pointer md:hidden"
@@ -19,7 +19,7 @@ export const Navbar = ({menuOpen,setMenuOpen}) => {
           </div>
         </div>
         <div className="hidden md:flex justify-between mx-40 px-4">
-          <img src="LogoKaribu.png" alt="Logo Karibu" className="w-24 h-24 max-xs:w-10 max-xs:h-10" />
+          <img src="/LogoKaribuNoel.png" alt="Logo Karibu" className="w-24 h-24 max-xs:w-10 max-xs:h-10" />
           <div className="flex justify-evenly items-center text-xl ml-auto gap-8">
             <a href="#home" className="font-ubuntu hover:transition-all hover:scale-105">Accueil</a>
             <a href="#equipe" className="font-ubuntu hover:transition-all hover:scale-105">Notre équipe</a>

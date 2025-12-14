@@ -9,6 +9,13 @@ export const Evenements = () => {
         <TitrePrincipal titre="Nos événements..." variant="clair" />
         <div className="overflow-x-auto whitespace-nowrap flex flex-row justify-start w-full px-5 pt-5 pb-10 gap-6">
             <CarteClaire
+                image="/Events/KaribuSantaSecret.png"
+                title="Karibu Santa Secret"
+                description="Nous organisons notre Santa Secret annuel pour célébrer la fin de l'année avec nos membres. C'est l'occasion parfaite pour partager des cadeaux, des rires et de la bonne humeur entre amis. Rejoignez-nous pour une soirée mémorable remplie de surprises et de joie festive !"
+                buttonText="En savoir plus"
+                link="https://wa.me/33768289412?text=Bonjour%2C%20vous%20allez%20bien%2C%20je%20souhaite%20avoir%20plus%20d%27informations%20sur%20le%20Santa%20Secret%20organis%C3%A9%20par%20Karibu%20et%20comment%20y%20participer%20%3F"
+            />
+            <CarteClaire
                 image="/Events/BBQ.png"
                 title="BBQ de Karibu"
                 description="Notre événement de clôture du dernier mandat a été un franc succès ! Un grand merci à tous les participants qui ont rendu cette journée mémorable. Entre les délicieuses grillades, les jeux amusants et les moments de partage, nous avons créé des souvenirs inoubliables ensemble. Restez connectés pour nos prochains événements !"
