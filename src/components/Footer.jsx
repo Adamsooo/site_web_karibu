@@ -13,7 +13,7 @@ export const Footer = () => {
                     <a href="#home" className="font-ubuntu hover:transition-all hover:scale-105">Accueil</a>
                     <a href="#equipe" className="font-ubuntu hover:transition-all hover:scale-105">Présentation</a>
                     <a href="#nouscontacter" className="font-ubuntu hover:transition-all hover:scale-105">Nous contacter</a>
-                    <a href="https://www.helloasso.com/associations/karibu-uge/adhesions  /formulaire-adhesion" 
+                    <a href="https://www.helloasso.com/associations/karibu-uge/adhesions/formulaire-adhesion" 
                        className="font-ubuntu hover:transition-all hover:scale-105">Nous rejoindre</a>
                 </nav>
             </div>
