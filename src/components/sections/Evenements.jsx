@@ -9,6 +9,13 @@ export const Evenements = () => {
         <TitrePrincipal titre="Nos événements..." variant="clair" />
         <div className="overflow-x-auto whitespace-nowrap flex flex-row justify-start w-full px-5 pt-5 pb-10 gap-6">
             <CarteClaire
+                image="/Events/FANZONE.png"
+                title="FANZONE CAN2025"
+                description="Notre FANZONE ouverte à tous les étudiants de l'Université Gustave Eiffel pour suivre ensemble les matchs de la CAN 2025. Une ambiance festive, des écrans géants et des moments de partage inoubliables vous attendent !"
+                buttonText="En savoir plus"
+                link="https://www.instagram.com/karibu_uge/"
+            />
+            <CarteClaire
                 image="/Events/KaribuSantaSecret.png"
                 title="Karibu Santa Secret"
                 description="Nous organisons notre Santa Secret annuel pour célébrer la fin de l'année avec nos membres. C'est l'occasion parfaite pour partager des cadeaux, des rires et de la bonne humeur entre amis. Rejoignez-nous pour une soirée mémorable remplie de surprises et de joie festive !"
