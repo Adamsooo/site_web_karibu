@@ -13,14 +13,14 @@ export const Evenements = () => {
                 title="FANZONE CAN2025"
                 description="Notre FANZONE ouverte à tous les étudiants de l'Université Gustave Eiffel pour suivre ensemble les matchs de la CAN 2025. Une ambiance festive, des écrans géants et des moments de partage inoubliables vous attendent !"
                 buttonText="En savoir plus"
-                link="https://www.instagram.com/karibu_uge/"
+                link="https://www.instagram.com/p/DSf3TK9DCzp/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA=="
             />
             <CarteClaire
                 image="/Events/KaribuSantaSecret.png"
                 title="Karibu Santa Secret"
                 description="Nous organisons notre Santa Secret annuel pour célébrer la fin de l'année avec nos membres. C'est l'occasion parfaite pour partager des cadeaux, des rires et de la bonne humeur entre amis. Rejoignez-nous pour une soirée mémorable remplie de surprises et de joie festive !"
                 buttonText="En savoir plus"
-                link="https://wa.me/33768289412?text=Bonjour%2C%20vous%20allez%20bien%2C%20je%20souhaite%20avoir%20plus%20d%27informations%20sur%20le%20Santa%20Secret%20organis%C3%A9%20par%20Karibu%20et%20comment%20y%20participer%20%3F"
+                link="https://www.instagram.com/reel/DShQgcOjBuU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
             />
             <CarteClaire
                 image="/Events/BBQ.png"
