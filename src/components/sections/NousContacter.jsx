@@ -45,6 +45,54 @@ export const NousContacter = () => {
                     <SiLinktree className="hover:text-amber-400 hover:scale-115 hover:shadow-2xl transition-colors duration-500 h-15 w-15" />
                 </a>
             </div>
+            <div className="flex flex-col gap-4
+                            border border-amber-200 p-6 rounded-lg shadow-xl bg-linear-to-br from-amber-900 to-amber-950
+                             max-w-md w-full">
+                <h1>
+                    <span className="flex justify-center text-3xl font-ubuntu-bold text-amber-200">Laissez-nous un message</span>
+                </h1>
+                <form className="space-y-3">
+                    <div>
+                        <label className="block text-xl md:text-2xl font-ubuntu-bold text-amber-200" htmlFor="name">
+                        Nom
+                        </label>
+                        <input
+                            id="name"
+                            type="text"
+                            class="w-full border border-amber-200 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-200"
+                            placeholder="Votre nom"
+                        />
+                    </div>
+                    <div>
+                        <label className="block  text-xl md:text-2xl font-ubuntu-bold text-amber-200" htmlFor="email">
+                        Email
+                        </label>
+                        <input
+                            id="email"
+                            type="email"
+                            class="w-full border border-amber-200 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-200"
+                            placeholder="votre@email.com"
+                        />
+                    </div>
+                    <div>
+                        <label className="block  text-xl md:text-2xl font-ubuntu-bold text-amber-200" htmlFor="message">
+                        Message
+                        </label>
+                        <textarea
+                            id="message"
+                            class="w-full border border-amber-200 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-200 h-28 resize-none"
+                            placeholder="Votre message..."
+                        >
+                        </textarea>
+                    </div>
+                    <button
+                        type="submit"
+                        className="btn-primary w-full"
+                    >
+                        Envoyer
+                    </button> 
+                </form>
+            </div>
 
 
             {/*<form className="max-w-md min-w-md 
