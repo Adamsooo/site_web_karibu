@@ -10,24 +10,21 @@ export const Home = () => {
                                md:pt-16">
         <div className="flex md:flex-row flex-col items-center">
           <div>
-            <TitreHero titre="Bienvenue chez"/>
-          </div>
-          <div>
-            <img src="LogoKaribuOriginal.png" 
-                 alt="Logo Karibu Original" 
-                 className="ml-2 w-48 h-48
-                            md:w-80 md:h-80 md:mt-8" />
+            <img src="KaribuRECRUTE.png" 
+                 alt="Karibu recrute" 
+                 className="ml-2 mt-5
+                            md:max-w-145 md:mt-12" />
           </div>
         </div>
-        <h2 className="font-ubuntu text-3xl md:text-4xl">La 1ère asso <span className="font-ubuntu-italic">afro</span> de l’Université Gustave Eiffel.</h2>
+        <h2 className="font-ubuntu text-3xl md:text-4xl">Deviens <span className="font-ubuntu-italic">membre</span> de ton asso préférée !</h2>
         <p className="font-raleway text-xl md:text-2xl md:max-w-2xl text-center">
-         Nous accueillons les étudiants africains (mais pas que) dans leurs démarches, leur intégration et leur réussite à l'Univ !<br/>
-         Soirées, rencontres, défilés, tournois... On fait vivre les cultures africaines sur le campus à travers des événements forts !
+         Tu as toujours souhaité rejoindre une asso ? Organiser des événements ? Faire des sorties ? Porter des projets ? <br/> 
+         Implique-toi dans les projets, prends part aux événements et vis une expérience enrichissante aux côtés d’une famille!
         </p>
-        <div className="flex items-center mb-5">
+        <div className="flex items-center mt-3 mb-5">
           <a href="https://www.helloasso.com/associations/karibu-uge/adhesions/formulaire-adhesion">
             <BoutonPrimaire>
-              Rejoignez-nous !                              
+              Rejoignez-nous !
             </BoutonPrimaire>
           </a>
         </div>
