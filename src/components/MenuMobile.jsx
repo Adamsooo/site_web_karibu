@@ -2,7 +2,7 @@ import React, { use } from "react";
 import { useEffect } from "react";
 export const MenuMobile = ({menuOpen,setMenuOpen}) => {
     return (
-        <div className={`fixed top-20 left-0 w-full
+        <div className={`fixed z-30 top-20 left-0 w-full
                         flex flex-col items-center justify-between
                         transition-all duration-300 ease-in-out
                         backdrop-blur-lg text-amber-950
@@ -15,7 +15,7 @@ export const MenuMobile = ({menuOpen,setMenuOpen}) => {
             
             <button onClick={()=>setMenuOpen(false)}
                     className="absolute top-10 right-10 
-                               text-bold text-5xl
+                               text-bold text-5xl text-amber-100
                                focus:outline-none cursor-pointer
                                hover:scale-150 hover:transition-all hover:duration-500"
                     aria-label="Close Menu">
@@ -26,7 +26,7 @@ export const MenuMobile = ({menuOpen,setMenuOpen}) => {
                 <a href="#home"
                    onClick={()=>setMenuOpen(false)} 
                    className={`flex flex-col items-center 
-                               h-full justify-center
+                               h-full justify-center text-amber-100
                                hover:underline-offset-1 hover:underline hover:scale-110 
                                hover:transition-all hover:duration-500
                                 ${
@@ -40,7 +40,7 @@ export const MenuMobile = ({menuOpen,setMenuOpen}) => {
                 <a href="#equipe"
                    onClick={()=>setMenuOpen(false)} 
                    className={`flex flex-col items-center 
-                               h-full justify-center
+                               h-full justify-center text-amber-100
                                hover:underline-offset-1 hover:underline hover:scale-110 
                                hover:transition-all hover:duration-500
                                 ${
@@ -54,7 +54,7 @@ export const MenuMobile = ({menuOpen,setMenuOpen}) => {
                 <a href="#nouscontacter"
                    onClick={()=>setMenuOpen(false)} 
                    className={`flex flex-col items-center 
-                               h-full justify-center
+                               h-full justify-center text-amber-100
                                hover:underline-offset-1 hover:underline hover:scale-110 
                                hover:transition-all hover:duration-500
                                 ${
@@ -68,7 +68,7 @@ export const MenuMobile = ({menuOpen,setMenuOpen}) => {
                 <a href="https://www.helloasso.com/associations/karibu-uge/adhesions/formulaire-adhesion"
                    onClick={()=>setMenuOpen(false)} 
                    className={`flex flex-col items-center 
-                               h-full justify-center
+                               h-full justify-center text-amber-100
                                hover:underline-offset-1 hover:underline hover:scale-110 
                                hover:transition-all hover:duration-500
                                 ${
