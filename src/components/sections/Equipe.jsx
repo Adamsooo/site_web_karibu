@@ -21,14 +21,14 @@ export const Equipe = () => {
                         onButtonClick={() => alert("Tu as cliqué !")}
                     />*/}
                     <CarteMembre
-                                    image="/Membres/Malick.PNG"
+                                    image="/Membres/Malick.webp"
                                     title="Malick"
                                     description=""
                                     buttonText="En savoir plus"
                                     link="#"
                     />
                     <CarteMembre
-                                    image="/Membres/Makinie.PNG"
+                                    image="/Membres/Makinie.webp"
                                     title="Makinie"
                                     description=""
                                     buttonText="En savoir plus"

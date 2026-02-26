@@ -66,7 +66,7 @@ export const Home = () => {
       <div className="absolute inset-0 bg-black/50"></div>
 
       {/* Contenu */}
-      <div className="relative z-10 mt-55 mb-5 flex flex-col items-center gap-4">
+      <div className="relative z-10 mt-40 mb-5 flex flex-col items-center gap-4">
 
         <div>
           <img src="/HeroImages/KaribuRECRUTE.png" 
