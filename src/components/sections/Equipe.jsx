@@ -25,49 +25,49 @@ export const Equipe = () => {
                                     title="Malick"
                                     description=""
                                     buttonText="En savoir plus"
-                                    link="https://www.linkedin.com/in/alla-michael-assande-617b9423b/"
+                                    link="#"
                     />
                     <CarteMembre
                                     image="/Membres/Makinie.PNG"
                                     title="Makinie"
                                     description=""
                                     buttonText="En savoir plus"
-                                    link="https://www.linkedin.com/in/alla-michael-assande-617b9423b/"
+                                    link="#"
                     />
                     <CarteMembre
                                     image="/Membres/Aïssatou.webp"
                                     title="Aïssatou"
                                     description=""
                                     buttonText="En savoir plus"
-                                    link="https://www.linkedin.com/in/alla-michael-assande-617b9423b/"
+                                    link="#"
                     />
                     <CarteMembre
                                     image="/Membres/Marjory.webp"
                                     title="Marjory"
                                     description=""
                                     buttonText="En savoir plus"
-                                    link="https://www.linkedin.com/in/alla-michael-assande-617b9423b/"
+                                    link="#"
                     />
                     <CarteMembre
                                     image="/Membres/Méryle.webp"
                                     title="Méryle"
                                     description=""
                                     buttonText="En savoir plus"
-                                    link="https://www.linkedin.com/in/alla-michael-assande-617b9423b/"
+                                    link="#"
                     />
                     <CarteMembre
                                     image="/Membres/Elmer.webp"
                                     title="Elmer"
                                     description=""
                                     buttonText="En savoir plus"
-                                    link="https://www.linkedin.com/in/alla-michael-assande-617b9423b/"
+                                    link="#"
                     />
                     <CarteMembre
                                     image="/Membres/Adams.webp"
                                     title="Adams"
                                     description=""
                                     buttonText="En savoir plus"
-                                    link="https://www.linkedin.com/in/alla-michael-assande-617b9423b/"
+                                    link="#"
                     />
                 </div>
         </section>
