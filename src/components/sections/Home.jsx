@@ -84,7 +84,7 @@ export const Home = () => {
           Porter des projets ? Implique-toi et vis une expérience enrichissante !
         </p>
 
-        <BoutonPrimaire>
+        <BoutonPrimaire onClick={() => window.open("https://forms.gle/Jf7CxkoLkpqyAP2M7", "_blank")}>
           Rejoignez-nous !
         </BoutonPrimaire>
       </div>
