@@ -1,7 +1,10 @@
 import { TitrePrincipal } from "../TitrePrincipal.jsx";
 import CarteMembre from "../CarteMembre.jsx";
+import { membres } from "../../data/membres.js";
 
-const MEMBRES = ["Malick", "Makinie", "Aïssatou", "Marjory", "Méryle", "Elmer", "Adams"];
+// Présidence sur la première ligne, le reste du bureau en dessous
+const direction = membres.filter((m) => m.direction);
+const bureau = membres.filter((m) => !m.direction);
 
 export const Equipe = () => {
     return (
@@ -14,10 +17,25 @@ export const Equipe = () => {
                 <div className="flex justify-start ">
                     <TitrePrincipal titre="Notre équipe" />
                 </div>
-                <div className="overflow-x-auto px-5 py-5 flex flex-row justify-start w-full gap-6">
-                    {MEMBRES.map((nom) => (
-                        <CarteMembre key={nom} image={`/Membres/${nom}.webp`} nom={nom} />
-                    ))}
+
+                <div className="flex flex-col items-center gap-10 pb-5">
+                    <ul className="flex flex-wrap justify-center gap-6">
+                        {direction.map((membre) => (
+                            <li key={membre.prenom}>
+                                <CarteMembre membre={membre} miseEnAvant />
+                            </li>
+                        ))}
+                    </ul>
+
+                    {bureau.length > 0 && (
+                        <ul className="flex flex-wrap justify-center gap-6">
+                            {bureau.map((membre) => (
+                                <li key={membre.prenom}>
+                                    <CarteMembre membre={membre} />
+                                </li>
+                            ))}
+                        </ul>
+                    )}
                 </div>
         </section>
     )

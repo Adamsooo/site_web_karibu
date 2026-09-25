@@ -35,6 +35,7 @@ export const NAVIGATION = [
     { href: "/#home", label: "Accueil" },
     { href: "/#evenements", label: "Événements" },
     { href: "/#equipe", label: "Notre équipe" },
+    { href: "/#phototheque", label: "Photothèque" },
     { href: "/#nouscontacter", label: "Nous contacter" },
     { href: LIENS.adhesion, label: "Adhérer" },
 ];

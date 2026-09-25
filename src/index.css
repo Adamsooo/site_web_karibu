@@ -13,6 +13,12 @@
   --font-ubuntu: 'Ubuntu', 'sans-serif';
   --font-raleway: 'Raleway Variable', 'sans-serif';
   --color-marron-hero: #6a2e0d;
+  /* Bandeau de la photothèque : défile de la moitié de sa largeur (la liste est doublée) */
+  --animate-defilement: defilement 45s linear infinite;
+
+  @keyframes defilement {
+    to { transform: translateX(-50%); }
+  }
 }
 
 @utility font-ubuntu-bold {

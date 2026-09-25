@@ -47,7 +47,7 @@ export const evenements = [
   {
     titre: "Conférence JEE",
     image: "/Events/Conference.webp",
-    dateDebut: null, // TODO : date à renseigner
+    dateDebut: "2025-04-30",
     lieu: "ESIEE Paris",
     resume: "Notre première conférence organisée à ESIEE Paris.",
     description: "Notre première conférence organisée à ESIEE Paris.",
