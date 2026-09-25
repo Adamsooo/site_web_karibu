@@ -23,7 +23,17 @@ export default defineConfig([
       },
     },
     rules: {
-      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
+      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]', argsIgnorePattern: '^[A-Z_]' }],
     },
+  },
+  {
+    // Fonctions serveur Vercel
+    files: ['api/**/*.js'],
+    languageOptions: { globals: globals.node },
+  },
+  {
+    // Points d'entrée des pages : ils montent l'application, ils n'exportent rien
+    files: ['src/pages/**/*.jsx'],
+    rules: { 'react-refresh/only-export-components': 'off' },
   },
 ])

@@ -1,56 +1,46 @@
-import CarteClaire from '../CarteClaire.jsx';
+import { useRef, useState } from "react";
+import CarteEvenement from "../CarteEvenement.jsx";
+import ModaleEvenement from "../ModaleEvenement.jsx";
 import { TitrePrincipal } from "../TitrePrincipal.jsx";
+import { evenements, trierEvenements } from "../../data/evenements.js";
+
+const evenementsTries = trierEvenements(evenements);
 
 export const Evenements = () => {
-    return ( 
-    <section className="flex flex-col gap-5 p-5 
+    // { evenement, origine } de l'événement ouvert, null si aucun
+    const [ouvert, setOuvert] = useState(null);
+    const declencheurRef = useRef(null);
+
+    const ouvrir = (evenement, origine, declencheur) => {
+        declencheurRef.current = declencheur;
+        setOuvert({ evenement, origine });
+    };
+
+    const fermer = () => {
+        setOuvert(null);
+        declencheurRef.current?.focus({ preventScroll: true });
+    };
+
+    return (
+    <section id="evenements"
+             className="flex flex-col gap-5 p-5
                         bg-linear-to-l from-amber-700 to-amber-950
-                        md:p-10">
+                        scroll-mt-20
+                        md:p-10 md:scroll-mt-24">
         <TitrePrincipal titre="Nos événements..." variant="clair" />
-        <div className="overflow-x-auto whitespace-nowrap flex flex-row justify-start w-full px-5 pt-5 pb-10 gap-6">
-            <CarteClaire
-                image="/Events/FANZONE.webp"
-                title="FANZONE CAN2025"
-                description="Notre FANZONE ouverte à tous les étudiants de l'Université Gustave Eiffel pour suivre ensemble les matchs de la CAN 2025. Une ambiance festive, des écrans géants et des moments de partage inoubliables vous attendent !"
-                buttonText="En savoir plus"
-                link="https://www.instagram.com/p/DSf3TK9DCzp/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA=="
-            />
-            <CarteClaire
-                image="/Events/KaribuSantaSecret.webp"
-                title="Karibu Santa Secret"
-                description="Nous organisons notre Santa Secret annuel pour célébrer la fin de l'année avec nos membres. C'est l'occasion parfaite pour partager des cadeaux, des rires et de la bonne humeur entre amis. Rejoignez-nous pour une soirée mémorable remplie de surprises et de joie festive !"
-                buttonText="En savoir plus"
-                link="https://www.instagram.com/reel/DShQgcOjBuU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-            />
-            <CarteClaire
-                image="/Events/BBQ.webp"
-                title="BBQ de Karibu"
-                description="Notre événement de clôture du dernier mandat a été un franc succès ! Un grand merci à tous les participants qui ont rendu cette journée mémorable. Entre les délicieuses grillades, les jeux amusants et les moments de partage, nous avons créé des souvenirs inoubliables ensemble. Restez connectés pour nos prochains événements !"
-                buttonText="En savoir plus"
-                link="https://www.instagram.com/p/DMSVIEwst7K/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-            />
-            <CarteClaire
-                image="/Events/Conference.webp"
-                title="Conférence JEE"
-                description="Notre première conférence organisée à ESIEE Paris"
-                buttonText="En savoir plus"
-                link="https://www.instagram.com/karibu_uge/p/DJvmw-eMSU6/"
-            />
-            <CarteClaire
-                image="/Events/SalonMondeArabe.webp"
-                title="Salon du monde Arabe"
-                description="Nous étions au salon du monde Arabe à Montrouge pour représenter les cultures africaines et échanger avec d'autres associations culturelles."
-                buttonText="En savoir plus"
-                link="https://www.instagram.com/karibu_uge/p/DJvmw-eMSU6/"
-            />
-            <CarteClaire
-                image="/Events/Story avec l'Épicerie Solidaire.webp"
-                title="Collecte w/ l'Épicerie Solidaire"
-                description="C'est un rituiel pour nous de participer aux collectes de l'Épicerie Solidaire de l'Université Gustave Eiffel. Merci à tous ceux qui ont contribué à cette belle initiative de solidarité étudiante !"
-                buttonText="En savoir plus"
-                link="https://fr.linkedin.com/posts/karibu-uge_solidarit%C3%A9%C3%A9tudiante-engagementassociatif-activity-7291820045951746049-iFMK?utm_source=li_share&utm_content=feedcontent&utm_medium=g_dt_web&utm_campaign=copy"
-            />
+        <div className="overflow-x-auto flex flex-row justify-start w-full px-5 pt-5 pb-10 gap-6">
+            {evenementsTries.map((evenement) => (
+                <CarteEvenement key={evenement.titre} evenement={evenement} onOuvrir={ouvrir} />
+            ))}
         </div>
+
+        {ouvert && (
+            <ModaleEvenement
+                evenement={ouvert.evenement}
+                origine={ouvert.origine}
+                onFermer={fermer}
+            />
+        )}
     </section>
     )
 };

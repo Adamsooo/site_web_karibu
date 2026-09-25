@@ -1,19 +1,20 @@
 import { useEffect, useState } from "react";
 import { BoutonPrimaire } from "../BoutonPrimaire.jsx";
+import { LIENS } from "../../config.js";
+
+const desktopImages = [
+  "/HeroImages/Hero_Image_Desktop_1.webp",
+  "/HeroImages/Hero_Image_Desktop_2.webp",
+  "/HeroImages/Hero_Image_Desktop_3.webp",
+];
+
+const mobileImages = [
+  "/HeroImages/Hero_Image_Mobile_1.webp",
+  "/HeroImages/Hero_Image_Mobile_2.webp",
+  "/HeroImages/Hero_Image_Mobile_3.webp",
+];
 
 export const Home = () => {
-
-  const desktopImages = [
-    "/HeroImages/Hero_Image_Desktop_1.webp",
-    "/HeroImages/Hero_Image_Desktop_2.webp",
-    "/HeroImages/Hero_Image_Desktop_3.webp",
-  ];
-
-  const mobileImages = [
-    "/HeroImages/Hero_Image_Mobile_1.webp",
-    "/HeroImages/Hero_Image_Mobile_2.webp",
-    "/HeroImages/Hero_Image_Mobile_3.webp",
-  ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -38,6 +39,9 @@ export const Home = () => {
 
     if (images.length < 2) return; // inutile de slider
 
+    // Précharge les images suivantes pour éviter un flash au changement
+    images.slice(1).forEach((src) => { new Image().src = src; });
+
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
     }, 10000);
@@ -58,20 +62,29 @@ export const Home = () => {
         bg-cover
         bg-center
         bg-no-repeat
+        transition-[background-image] duration-700
       "
       style={{ backgroundImage: `url(${images[currentIndex]})` }}
     >
-      
+
       {/* Overlay pour lisibilité */}
       <div className="absolute inset-0 bg-black/50"></div>
 
       {/* Contenu */}
       <div className="relative z-10 mt-40 mb-5 flex flex-col items-center gap-4">
 
+        {/* Titre principal de la page, lu par les moteurs de recherche et les lecteurs d'écran */}
+        <h1 className="sr-only">
+          Karibu UGE, l'association des étudiants africains et afro-descendants de l'Université Gustave Eiffel
+        </h1>
+
         <div>
-          <img src="/HeroImages/KaribuRECRUTE.png" 
-                alt="Karibu recrute" 
-                className="ml-2 mt-5
+          <img src="/HeroImages/KaribuRECRUTE.webp"
+                alt="Karibu recrute"
+                width="1130"
+                height="424"
+                fetchPriority="high"
+                className="ml-2 mt-5 h-auto
                           md:max-w-145 md:mt-12" />
         </div>
 
@@ -84,7 +97,7 @@ export const Home = () => {
           Porter des projets ? Implique-toi et vis une expérience enrichissante !
         </p>
 
-        <BoutonPrimaire onClick={() => window.open("https://forms.gle/Jf7CxkoLkpqyAP2M7", "_blank")}>
+        <BoutonPrimaire onClick={() => window.open(LIENS.recrutement, "_blank", "noopener")}>
           Rejoignez-nous !
         </BoutonPrimaire>
       </div>
